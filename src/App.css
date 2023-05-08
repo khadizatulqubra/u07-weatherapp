@@ -1,38 +1,172 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.app {
+  background-image: url('https://wallpapercave.com/wp/wp10208678.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease;
+}
+
+.app.warm {
+  background-image: url('https://media.istockphoto.com/id/1254065595/photo/hot-summer-or-heat-wave-background.jpg?b=1&s=170667a&w=0&k=20&c=3pJ8IywW-9H-bcZ2XNGG0EaKwYiWD3XdMLC-mAC6dFI=');
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 25px;
+}
+
+.search-box {
+  width: 50%;
+  margin: 20px;
+  position: absolute;
+  left: 20%;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 16px 16px 16px 16px;
+  margin-top: -25px;
+
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  
+  color: #313131;
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.location-box .location {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  margin-top: 50px;
+}
+
+.location-box .date {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(241, 245, 246, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 600;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weather-box .weather {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weather-info{
+
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  justify-content: center;
+  transition: transform 0.2s;
+  margin: 30px auto;
+  padding: 15px 25px;
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 600;
+  text-shadow: 3px 5px rgba(95, 95, 98, 0.371);
+  text-align: center;
+
+
+
+}
+.tempinfo{
+  padding: 10px;
+  font-weight: 600;
+  width: 250px;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 15px;
+  transition: transform 0.2s;
+  background-color: rgba(145, 149, 149, 0.507);
+  border-radius: 16px;
+  text-align: center;
+}
+
+.tempinfo:hover{
+  transform: scale(1.1);
+}.forecast-box {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  margin: 35px auto;
+  padding: 15px 25px;
+  color: #FFF;
+  height: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.forecast-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  font-weight: 600;
+  width: 300px;
+  font-size: 30px;
+  transition: transform 0.2s;
+  background-color: rgba(126, 131, 131, 0.507);
+  border-radius: 16px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+.icons{
+  color: #FFF;
+  margin-left: 100px;
+  
 }
