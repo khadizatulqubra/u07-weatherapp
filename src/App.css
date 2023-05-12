@@ -274,7 +274,7 @@ main {
   .tempinfo {
     padding: 10px;
     font-weight: 600;
-    width: 150px;
+    width: 200px;
     font-size: 12px;
     display: flex;
     flex-direction: column;
@@ -291,7 +291,7 @@ main {
 
   .icons{
     color: #FFF;
-    margin-left: 50px;
+    margin-left: 60px;
     font-size: 12px;
     
   }
