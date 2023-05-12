@@ -9,14 +9,15 @@ body {
 }
 
 .app {
-  background-image: url('https://wallpapercave.com/wp/wp10208678.jpg');
+  background-image: url('https://i.pinimg.com/originals/40/b1/d3/40b1d3900da6b89c409bc907a7bbb77f.jpg');
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease;
+ 
 }
 
 .app.warm {
-  background-image: url('https://media.istockphoto.com/id/1254065595/photo/hot-summer-or-heat-wave-background.jpg?b=1&s=170667a&w=0&k=20&c=3pJ8IywW-9H-bcZ2XNGG0EaKwYiWD3XdMLC-mAC6dFI=');
+  background-image: url('https://womenlovetech.com/wp-content/uploads/2020/12/weatherplus-01_xhcqwf.jpg');
 }
 
 main {
@@ -136,15 +137,20 @@ main {
 
 .tempinfo:hover{
   transform: scale(1.1);
-}.forecast-box {
+}
+.forecast-box {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 35px auto;
+  margin: 60px auto;
   padding: 15px 25px;
   color: #FFF;
   height: auto;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background-color: #31313172;
+ 
 }
 
 .forecast-item {
@@ -152,14 +158,13 @@ main {
   flex-direction: row;
   justify-content: center;
   gap: 20px;
-  padding: 10px;
+  padding: 15px;
   font-weight: 600;
-  width: 300px;
-  font-size: 30px;
+  width: 700px;
+  font-size: 20px;
   transition: transform 0.2s;
-  background-color: rgba(126, 131, 131, 0.507);
-  border-radius: 16px;
   text-align: center;
+  border-bottom:4px solid rgb(219, 207, 207); ;
 }
 
 
@@ -170,3 +175,156 @@ main {
   margin-left: 100px;
   
 }
+@media screen and (min-width: 390px) and (max-width: 844px) {
+
+  
+ 
+  .app {
+   
+    width: 100%;
+  }
+  
+  .app.warm {
+ 
+    width: 100%;
+  }
+  
+ 
+  
+  .search-box {
+    grid-column: 1 / span 2;
+    justify-self: center;
+    width: 70%;
+    margin: 20px;
+    position: relative;
+    left: 12%;
+  }
+  
+  .search-box .search-bar {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    margin-top: -25px;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+    color: #313131;
+    font-size: 20px;
+    transition: 0.4s ease;
+  }
+  
+  .search-box .search-bar:focus {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+  
+  .location-box {
+    grid-column: 1 / span 2;
+    text-align: center;
+  }
+  
+  .location-box .location {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+    margin-top: 30px;
+  }
+  
+  .location-box .date {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    text-shadow: 1px 1px rgba(50, 50, 70, 0.5);
+  }
+  
+  .weather-box {
+    grid-column: 1 / span 2;
+    text-align: center;
+    padding-left: 30px;
+   
+  }
+  
+  .weather-box .temp {
+    position: relative;
+    display: inline-block;
+    margin: 30px auto;
+    background-color: rgba(241, 245, 246, 0.2);
+    border-radius: 16px;
+
+    color: #fff;
+    font-size: 22px;
+    
+  }
+
+  .weather-info {
+    display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(200px, auto);
+  padding-left: 100px;
+  font-size: 22px;
+
+  }
+
+  .tempinfo {
+    padding: 10px;
+    font-weight: 600;
+    width: 150px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: transform 0.2s;
+    background-color: rgba(145, 149, 149, 0.507);
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  .tempinfo:hover {
+    transform: scale(1.1);
+  }
+
+  .icons{
+    color: #FFF;
+    margin-left: 50px;
+    font-size: 12px;
+    
+  }
+  .forecast-box {
+    grid-column: 1 / span 2;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px auto;
+    color: #fff;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    background-color: #31313172;
+    padding-left: 10px;
+    font-size: 10px;
+  }
+
+  .forecast-item {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    width: 300px;
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+
+
+ 
