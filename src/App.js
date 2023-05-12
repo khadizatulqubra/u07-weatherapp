@@ -3,14 +3,12 @@ import Forecast from "./components/Forecast";
 import ErrorBoundary from "./components/ErrorBoundary";
 import "./App.css";
 import { WiThermometer,WiSunrise,WiSunset,WiWindBeaufort3,WiHumidity,WiFog} from "react-icons/wi";
-// import { UilTemperature,Uilsun,UilSunset,UilWind
 
-// }from '@iconscout/react-unicons'
 const api = {
   key: "4255f44a4c1e5f98d41b39505897fa5d",
   base: "https://api.openweathermap.org/data/2.5/",
 };
-const iconUrl=" https://openweathermap.org/img/wn/10d@2x.png"
+// const iconUrl=" https://openweathermap.org/img/wn/10d@2x.png"
 
 function App() {
   const [query, setQuery] = useState("");

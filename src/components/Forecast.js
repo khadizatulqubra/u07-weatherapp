@@ -1,5 +1,5 @@
 import React from 'react';
-import { WiThermometer, WiSunrise, WiSunset, WiWindBeaufort3, WiHumidity, WiFog } from "react-icons/wi";
+import { WiThermometer, WiSunrise, WiSunset, WiWindBeaufort3, WiHumidity } from "react-icons/wi";
 
 const Forecast = ({ forecast }) => {
   const getHumidity = (weatherData) => {
